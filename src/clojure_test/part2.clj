@@ -77,7 +77,7 @@
     (chess/generate-string res)))
 
 (defn get-from-id [id]
-  (let [data (get-data @transaction :transaction_id id)]
+  (let [data (get-data @transaction :transaction_id (read-string id))]
     (chess/generate-string data)
     ))
 
