@@ -5,22 +5,6 @@ untuk menjalankan gunakan command
 
 ./start.sh
 
-saya tidak tau kenapa PUT tidak bisa
-sehingga saya pakai POST
-
-dari
-
-PUT localhost:9010/transactionservice/transaction/$transaction_id
-
-Body:
-
-{"amount": double, "type": string, "parent_id": long}
-
-
-transaction_id dimasukan dalam form params
-
-menjadi
-
 POST localhost:9010/transactionservice/transaction
 
 Body :
